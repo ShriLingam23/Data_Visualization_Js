@@ -1,24 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './assets/css/dragable.css'
+
+import Dragable from './components/Dragable'
+import Reversed from './components/Reversed';
+import Pie_Dragable from './components/Pie_Dragable';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+      <Dragable />
+      </div>
+      
+      <div>
+      <Reversed/>
+      </div>
+
+      <div>
+        <Pie_Dragable/>
+      </div>
+      
     </div>
   );
 }
